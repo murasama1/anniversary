@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 Month Anniversary ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Paper effect with animation */
+        .paper {
+            display: none; /* Initially hidden */
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 600px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-family: 'Arial', sans-serif;
+            font-size: 18px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(30px); /* Start from below */
+            animation: slideUp 1s forwards; /* Animation for slide-up */
+        }
+
+        /* Slide-up animation */
+        @keyframes slideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px); /* Start below */
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0); /* End at normal position */
+            }
+        }
+
+        /* Hide elements initially */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1 id="question">Do you love me?</h1>
+        <button onclick="anniversaryLetter()">Yes</button>
+        <button onclick="changeGif()">No</button>
+        <br>
+        <img id="myGif" src="milk-and-mocha.gif" width="300" height="auto">
+        
+        <!-- The message above the paper -->
+        <h2 id="yayMessage" class="hidden">YAY YOU LOVE ME!</h2>
+
+        <!-- The "paper" that appears when Yes is clicked -->
+        <div id="paper" class="paper">
+            <p id="loveNote">Happy Anniversary My Love 💖</p>
+            HAPPY 6 MONTHS WE MADE IT TO HALF A YEAR! I AM SO PROUD OF US YAYYY. To be with you feels amazing and knowing you are with me always is a gift
+            that I am truly grateful for. You have actually blessed me and made my life so much better just be being in it. We may have had some ups and downs, but it is a real joy 
+            to have you in my life and I am sorry if I didn't get to always say that. You make me the happiest person in the world, you are truly the best wife ever and thank
+            you for truly making my whole world better. It's amazing that in such a short amount of time I feel like I can genuinely say that one singular person has made such an 
+            impact to my life and I am truly grateful for you being here to support me always. We have been together for half a year and yet it feels like I just met you yesterday, 
+            these last 6 months have been nothing short of spectacular, and truly every day with you has been a true gift. ALSO I SHOULD TALK ABOUT JUST HOW GORGEOUS YOU ARE (you wont let me normally so I do here), I THOUGHT 
+            THERE WERE LIMITS MAN TO HOW GORGEOUS ONE CAN BE AND YET YOU WENT ABOVE AND BEYOND. LIKE SERIOUSLY WHAT KIND OF GENETICS AND HOW ARE YOU SO GORGEOUS WHAT? WHAT MAKES ME MORE 
+            CONFUSED IS THAT OUT OF EVERY GUY IN THE PLANET, I AM THE ONE THAT IS MARRYING YOU. ME OF ALL PEOPLE, I TAKE GREAT PRIDE IN THAT OKAY. But, seriously if I haven't said it enough
+            I love you so much that it's crazy. I want you to know that I am always here to support you and be with you always. Were partners for life and I will never leave you, 
+            if you ever need me I am always there, whereever, whenever. On top of that, you got worried that I may change during college, I want that thought to leave your mind. I have a 
+            massive crush on you that genuinely has gotten greater and greater being with you, I can't look at anyone the way I do for you. You have my eyes, my heart, my body, my life
+            because in true honesty you are my life. You are everything I work for and you are the person that makes me so happy, therefore I want you to know I am always with you. 
+            I may be young but I am truly glad I found my soulmate. I am forever grateful to have met you and more grateful that I get to spend the rest of my life with you. I tell my mom all the 
+            time how wonderful and amazing you truly are. At this point she is more than ready to let you marry me and is stood by it because of how much I told her about you. You truly 
+            are a wonderful and special person and I am so grateful to be the person you marry and spend the rest of your life with. When 
+            we do have kids I really hope that they inherit your features, I was blessed to marry someone so kind and gorgeous and brilliant, so I hope they take from there mother. 
+            One more thing, I am sorry that I may not be able to help you with some of your work, I do wish I was able too and try so hard to lessen your load, the only way I am able
+            to even remotely try to help is either your coding or praying. It seems that some of my prayers were answered, but I really do enjoy doing your coding so please let me. 
+            It makes me feel better that I am able to have some support over you and provide you with something that I know will genuinely help you, because in true honesty being 
+            with you and knowing you are with me has always brought me so much joy and I can't thank you enough for that. It is kind of weird being so distant from each other, but I want you to know that no matter where we are I will always love you, and only you. No one else has my eyes (it would be impossible I literally drool to your photos) and no one else ever will. I do love talking about you also, I tell my friends all about you every chance I can, how amazing you are, and mighty gorgeous. I make them so jealous oh my god, "Okay Mushfiq we get it", always comes from there mouths, but I am really glad I am able to be in such a great relationship with someone so amazing. I truly feel like I was gifted the world with just one person and I am beyond in love with you. (Like marry me please right now😢). But I really can't wait to be with you I know for a fact I will never let you go, not even for a second. When I am gonna be with you you are stuck to me and I am definitely not letting go. ALSO KISSES YAH, YOU ARE GETTING KISSES AND BABIES NONSTOPPPPP LIKE YOU WILL BE ANNOYED BUT ITS OKAY BECAUSE I MISSED YOU SOOO MUCH LIKE YOU DONT GET IT. I AM INSANELY EXCITED FOR DECEMBER OH MY GOD AND THE MORE I REALIZE IS THAT THE CLOSER WE ARE TO GETTING TO DECEMBER, IT ONLY 8 MONTHS LEFT WOW AND THEN I CAN BE WITH YOU FINALLY. (also I am immediately kissing you once I see you, I really miss ur lips okay 😢) I LOVE YOU SWEETHEART WAYY MORE THAN YOU CAN EVER IMAGINE ❤️.
+            <br>
+            <br>
+            HAPPY 6 MONTHS MY LOVE - MUSHUUU (YOUR HUSBAND FOREVER)
+        </div>
+    </center>
+
+    <script>
+        let noClickCount = 0; 
+
+        function changeGif() {
+            noClickCount++; 
+
+            if (noClickCount === 1) {
+                document.getElementById("question").innerText = "Why not? 😢";
+            } else if (noClickCount === 2) {
+                document.getElementById("question").innerText = "Stop being mean! 😡";
+                document.getElementById("myGif").src = "mocha-angry.gif"; 
+            } else {
+                document.getElementById("question").innerText = "You don't love me anymore 😭"; 
+                document.getElementById("myGif").src = "mocha-crying.gif"; 
+            }
+        }
+
+        function anniversaryLetter() {
+            if (noClickCount > 0) {
+                document.getElementById("question").innerText = "You are too cruel"; 
+            } else {
+            document.getElementById("question").classList.add("hidden");
+            document.querySelector("button").classList.add("hidden");
+            document.querySelectorAll("button")[1].classList.add("hidden");
+            document.getElementById("myGif").classList.add("hidden");
+
+            document.getElementById("yayMessage").classList.remove("hidden");
+
+            let paper = document.getElementById("paper");
+            paper.classList.remove("hidden");  
+
+            paper.style.display = 'block'; 
+        }
+    }
+    </script>
+</body>
+</html>
